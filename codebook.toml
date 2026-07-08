@@ -1,0 +1,2 @@
+dictionaries = ["pt_br"]
+ignore_paths = ["main.typ"]
