@@ -1,5 +1,5 @@
 #set page(
-  margin: (x: 1.5cm, y: 2cm),
+  margin: (x: 1.5cm, y: 1cm),
   numbering: "1 / 1",
 )
 #set text(font: "Times New Roman", size: 12pt)
@@ -19,7 +19,7 @@
     #text(size: 10pt)[#contact]
   ]
   line(length: 100%, stroke: 1pt + accent-colour)
-  v(10pt)
+  v(5pt)
 }
 
 #let cv_section(title) = {
@@ -42,12 +42,18 @@
 
 #cv_header(
   "Daniel Sávio",
-  "Engenharia de Controle e Automação, Desenvolvimento de Sistemas, Tradução e Escrita de artigos",
-  "Bragança Paulista, SP, Brasil | www.linkedin.com/in/daniel-sávio-pereira-da-silva-201500199 | github.com/Daniel-Savio",
+  "Engenharia de Controle e Automação, Desenvolvimento de Sistemas, Tradução e Escrita de artigos técnicos e acadêmicos",
+  [
+    [Bragança Paulista, SP | (11) 94784-4341 | daniel.starzewski.137\@gmail.com | Nascido em 2002], \
+    #v(5pt)
+    #box(image("Linkedin.png", height: 1.5cm), baseline: 25%) linkedin.com/in/daniel-sávio-pereira-da-silva-201500199
+    #h(15pt)
+    #box(image("Github.png", height: 1.5cm), baseline: 25%) github.com/Daniel-Savio
+  ],
 )
 
 #heading(level: 1)[Informação Geral:]
-Comecei como estagiário em 2021 com as tarefas de tradução de documentação técnica. Com o desenvolvimento de algumas ferramentas internas, passei a trabalhar junto da equipe de monitoramento de ativos. Assim, o trabalho consiste em estudar, analisar, operar e predizer o estado de transformadores, reatores e demais ativos elétricos. Hoje, foco na implementação de soluções de monitoramento e em toda a parte de telemetria dos dados sensoreados dos ativos, atenuando o trabalho para o uso da norma IEC 61850. A entrega final, consiste disponibilizar a solução desde a coleta até a apresentação final das informações em relatórios, _dashboards_, artigos e outros.
+Comecei como estagiário em 2021 com as tarefas de tradução de documentação técnica. Com o desenvolvimento de algumas ferramentas internas, passei a trabalhar junto da equipe de monitoramento de ativos. Assim, o trabalho consiste em estudar, analisar, operar e predizer o estado de transformadores, reatores e demais ativos elétricos. Hoje, foco na implementação de soluções de monitoramento e em toda a parte de telemetria dos dados sensoreados dos ativos, atenuando o trabalho para o uso da norma IEC 61850. A entrega final, consiste em disponibilizar a solução desde a coleta até a apresentação final das informações em relatórios, _dashboards_, artigos e outros.
 
 #cv_section("Experiência profissional")
 
@@ -93,6 +99,9 @@ Comecei como estagiário em 2021 com as tarefas de tradução de documentação 
   "2026 - Em diante",
   "Atibaia - Brasil",
   [Desenvolvimento completo de um aplicativo responsável por parametrizar os equipamentos da Treetech Tecnologia LTDA tanto via serial quanto TCP/IP. O aplicativo também permite salvar a parametrização do IED em questão: #text(fill: blue, style: "italic")[https://sac.treetech.com.br/pt-BR/support/solutions/articles/69000874048-software-de-leitura-e-parametrizac%C3%A3o]
+
+    #v(5pt)
+    #align(center)[#image("software.png", width: 2cm)]
   ],
 )
 
@@ -101,7 +110,10 @@ Comecei como estagiário em 2021 com as tarefas de tradução de documentação 
   "Treetech Tecnologia LTDA",
   "2025 - Atualmente",
   "Atibaia - Brasil",
-  [Desing, estruturação e programação do centro de monitoramento da empresa. O projeto segue em constante desenvolvimento e melhoria. Para saber mais: #text(fill: blue, style: "italic")[https://www.linkedin.com/posts/treetech-tecnologia_engenhariaelaeztrica-energia-manutenaexaeto-activity-7480270750692732930-kQn-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6GzSEB8i513kVqN2b7ARHsCb14_yDGERs]
+  [Desing, estruturação e programação do centro de monitoramento da empresa. O projeto segue em constante desenvolvimento e melhoria. Para saber mais: #text(fill: blue, style: "italic")[https://treetech.com.br/cma/]
+
+    #v(5pt)
+    #align(center)[#image("CMA.png", width: 2cm)]
   ],
 )
 
